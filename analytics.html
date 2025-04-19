@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Habit Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <h1 class="logo">Habit Builder</h1>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="habits.html">My Habits</a>
+                <a href="analytics.html" class="active">Analytics</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container analytics-page">
+        <section class="overview-section">
+            <h2>Overview</h2>
+            <div class="analytics-cards">
+                <div class="analytics-card">
+                    <h3>Total Habits</h3>
+                    <p class="analytics-value" id="totalHabits">0</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Average Completion Rate</h3>
+                    <p class="analytics-value" id="avgCompletionRate">0%</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Best Performing Habit</h3>
+                    <p class="analytics-value" id="bestHabit">-</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Longest Streak</h3>
+                    <p class="analytics-value" id="longestStreak">0 days</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trends-section">
+            <h2>Trends</h2>
+            <div class="trends-container">
+                <div class="trend-card">
+                    <h3>Weekly Progress</h3>
+                    <div class="chart-container" id="weeklyChart">
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <h3>Monthly Overview</h3>
+                    <div class="chart-container" id="monthlyChart">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="insights-section">
+            <h2>Insights</h2>
+            <div class="insights-container">
+                <div class="insight-card">
+                    <h3>Best Time of Day</h3>
+                    <p class="insight-text" id="bestTimeInsight">Loading insights...</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Most Consistent Habits</h3>
+                    <p class="insight-text" id="consistentHabitsInsight">Loading insights...</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Areas for Improvement</h3>
+                    <p class="insight-text" id="improvementInsight">Loading insights...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="theme.js"></script>
+    <script src="analytics.js"></script>
+</body>
+</html>

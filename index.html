@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Builder - Track Your Progress</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <h1 class="logo">Habit Builder</h1>
+            <div class="nav-links">
+                <a href="index.html" class="active">Dashboard</a>
+                <a href="habits.html">My Habits</a>
+                <a href="analytics.html">Analytics</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="habits-section">
+            <h2>My Daily Habits</h2>
+            <div class="habits-grid" id="habitsGrid">
+            </div>
+            <button class="add-habit-btn" id="addHabitBtn">+ Add New Habit</button>
+        </section>
+
+        <section class="progress-section">
+            <h2>Progress Overview</h2>
+            <div class="progress-cards">
+                <div class="progress-card">
+                    <h3>Current Streak</h3>
+                    <p class="streak-count">5 days</p>
+                </div>
+                <div class="progress-card">
+                    <h3>Completed Habits</h3>
+                    <p class="completed-count">12/15</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="chatbot-section">
+            <div class="chatbot-container">
+                <div class="chatbot-header">
+                    <h3>Habit Assistant</h3>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Chat messages will appear here -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="messageInput" placeholder="Ask for habit advice...">
+                    <button id="sendMessage">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

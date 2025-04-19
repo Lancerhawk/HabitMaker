@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Habits - Habit Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <h1 class="logo">Habit Builder</h1>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="habits.html" class="active">My Habits</a>
+                <a href="analytics.html">Analytics</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container habits-page">
+        <section class="habits-list-section">
+            <div class="section-header">
+                <h2>All Habits</h2>
+                <button class="add-habit-btn" id="addHabitBtn">+ Add New Habit</button>
+            </div>
+            
+            <div class="habits-list" id="habitsList">
+            </div>
+        </section>
+
+        <section class="habit-details-section">
+            <h2>Habit Details</h2>
+            <div class="habit-details-card" id="habitDetails">
+                <div class="habit-stats">
+                    <div class="stat-card">
+                        <h3>Current Streak</h3>
+                        <p class="stat-value">0 days</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Longest Streak</h3>
+                        <p class="stat-value">0 days</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Completion Rate</h3>
+                        <p class="stat-value">0%</p>
+                    </div>
+                </div>
+                <div class="habit-calendar">
+                    <h3>Activity Calendar</h3>
+                    <div class="calendar-grid" id="calendarGrid">
+                        <!-- Calendar will be generated here -->
+                    </div>
+                </div>
+                <div class="habit-actions">
+                    <button class="edit-habit-btn">Edit Habit</button>
+                    <button class="delete-habit-btn">Delete Habit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="theme.js"></script>
+    <script src="habits.js"></script>
+</body>
+</html>
